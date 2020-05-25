@@ -82,7 +82,7 @@ article > img,
 }
 #wrapper::after {
   color: #1B5083;
-  content: 'KazuGames';
+  content: 'Copyright © 2020 | KazuGames';
   float: right;
   font-size: 0.875rem;
 }
