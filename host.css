@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Poppins');
+img {
+  display: block;
+  margin: auto;
+}
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+p { line-height: 1.8em; }
+ul { padding: 0; }
+ul li { list-style: none; }
+h1 { font: 1.6em 'Oswald', sans-serif; }
+h2 { font: 1.4em 'Oswald', sans-serif; margin-top: 0px;}
+h3,
+h4,
+h5,
+h6 { font: 1.2em 'Oswald', sans-serif; }
+#wrapper {
+  background: #fff;
+  font: 16px 'Poppins', sans-serif;
+  margin: auto;
+  max-width: 1100px;
+  text-align: justify;
+  width: 100%;
+}
+#header { text-align: center; }
+.content-container { padding: 25px 30px; }
+.company_logo {
+  height: 75px;
+  padding: 1rem 0;
+}
+.logoimg { max-height: 100%; }
+.product-container { height: 500px; }
+#product-collection { margin: 20px; }
+article > img,
+.focused_image { max-height: 500px; }
+#product-details img {
+  margin-top: 1rem;
+  max-width: 100%;
+}
+.tab-content ul { padding-left: 20px; }
+.tab-content ul li { list-style-type: disc; }
+.tab-content ul li ul { margin-top: 16px; }
+.tab-content ul li ul li { list-style-type: circle; }
+.tabs,
+.imgs {
+  position: relative;
+  overflow: hidden;
+}
+.tabs:after,
+.imgs:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.tabs > li {
+  border: 1px solid rgba(68, 68, 68, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.tabs li { margin-bottom: 15px; }
+.tabs li > input { display: none; }
+.tabs li > label {
+  background: #333;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  padding: 12px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.tabs li:last-child > label { border-right-width: 1px; }
+[for="tab-3"] + .tab-content ul { margin-top: 15px; }
+.tabs .tab-content {
+  padding: 1.5em;
+  text-align: justify;
+}
+#wrapper::after {
+  color: #1B5083;
+  content: 'KazuGames';
+  float: right;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .product-container > img { max-width: 100%; }
+  .tabordion { flex-direction: row !important; }
+  .tabordion section label {
+    top: 85%;
+    width: 100%;
+  }
